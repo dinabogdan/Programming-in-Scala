@@ -14,6 +14,21 @@ object HelloWorld {
     capital += ("Japan" -> "Tokyo")
     println(capital("France"))
 
+    capital.foreach(c => println("The capital of " + c._1 + " is " + c._2))
+
+    val programmingLanguages = List(
+      "Erlang",
+      "Scala",
+      "Clojure",
+      "Java",
+      "Kotlin"
+    )
+
+    println("Some programming languages: ")
+    for(programmingLanguage <- programmingLanguages) println(programmingLanguage)
+
+    println("I'm wondering how the JS programmers are feeling now?")
+
     println("10! = " + factorial(10))
   }
 }
