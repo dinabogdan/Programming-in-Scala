@@ -40,6 +40,10 @@ object AdvancedFeatures {
 
     val oneTwoThree2 = 1 :: 2 :: 3 :: Nil
 
+    println("The value of oneTwoThree2 is: " + oneTwoThree2)
+
+    val pair = (10, "Grade A")
+    println("The integer value: " + pair._1 + " represents the following grade: " + pair._2)
 
   }
 }
