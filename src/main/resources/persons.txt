@@ -1,0 +1,7 @@
+John Doe, 25
+Jane Doe, 22
+
+Albert Einstein, 40
+Carl Gauss, 5
+
+One difference between Scala and Java is that whereas Java requires you to put a public class in a file named after the class—for example, you'd put class SpeedRacer in file SpeedRacer.java—in Scala, you can name .scala files anything you want, no matter what Scala
