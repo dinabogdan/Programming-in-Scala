@@ -30,7 +30,7 @@ object AdvancedFeatures {
 
     val oneTwoThreeFour = oneTwo ::: threeFour
 
-    println(oneTwo + " and " + threeFour + " were not mutated!")
+    println(s"$oneTwo and $threeFour were not mutated!")
     println("Thus, " + oneTwoThreeFour + " is a new list!")
 
 

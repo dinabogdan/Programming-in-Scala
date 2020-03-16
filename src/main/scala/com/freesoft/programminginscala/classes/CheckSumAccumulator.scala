@@ -28,7 +28,6 @@ object CheckSumAccumulator {
     }
 }
 
-
 object Main {
   def main(args: Array[String]): Unit = {
     val acc = new CheckSumAccumulator()
