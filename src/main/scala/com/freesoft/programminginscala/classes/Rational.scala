@@ -35,13 +35,18 @@ class Rational(n: Int, d: Int = 1) {
   // auxiliary constructor - not used
   // def this(n: Int) = this(n, 1)
 
-  override def toString: String = numer + "/" + denom
+  override def toString: String = denom match {
+    case 1 => numer.toString
+    case _ => numer + "/" + denom
+  }
 
   def +(that: Rational): Rational =
     new Rational(
       n * that.denom + that.numer * d,
       d * that.denom
     )
+
+  def +(i: Int): Rational = new Rational(numer + i * denom, denom)
 
   def *(that: Rational): Rational =
     new Rational(numer * that.numer, denom * that.denom)
