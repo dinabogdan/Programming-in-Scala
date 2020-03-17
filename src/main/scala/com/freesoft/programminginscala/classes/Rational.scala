@@ -37,11 +37,14 @@ class Rational(n: Int, d: Int = 1) {
 
   override def toString: String = numer + "/" + denom
 
-  def add(that: Rational): Rational =
+  def +(that: Rational): Rational =
     new Rational(
       n * that.denom + that.numer * d,
       d * that.denom
     )
+
+  def *(that: Rational): Rational =
+    new Rational(numer * that.numer, denom * that.denom)
 
   def lessThan(that: Rational): Boolean = this.numer * that.denom < that.numer * this.denom
 
