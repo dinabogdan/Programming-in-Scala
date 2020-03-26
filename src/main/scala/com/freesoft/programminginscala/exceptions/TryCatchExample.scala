@@ -20,7 +20,7 @@ object TryCatchMain {
 
   def main(args: Array[String]): Unit = {
 
-    val tryCatchEx = new TryCatchExample
+    val tryCatchEx = new TryCatchExample()
 
     println("Result of calling f() is: " + tryCatchEx.f())
     println("Result of calling g() is: " + tryCatchEx.g())
