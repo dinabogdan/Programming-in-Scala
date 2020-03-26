@@ -3,7 +3,7 @@ package com.freesoft.programminginscala
 object ForExpression {
 
   def main(args: Array[String]): Unit = {
-    val filesHere = new java.io.File(".").listFiles
+    val filesHere = new java.io.File("src/main/scala/com/freesoft/programminginscala/classes").listFiles
 
     for (file <- filesHere) {
       println(file)
