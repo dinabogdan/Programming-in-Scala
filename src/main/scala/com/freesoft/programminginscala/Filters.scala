@@ -35,13 +35,22 @@ object Filters {
 
   }
 
-  def fileLines(file: File) = Source.fromFile(file).getLines().toList
+  def fileLines(file: File): List[String] = Source.fromFile(file).getLines().toList
 
-  def grep(pattern: String, files: Array[File]) = for {
+  def grep(pattern: String, files: Array[File]): Unit = for {
     file <- files
     if file.getName.endsWith(".scala")
     line <- fileLines(file)
-    if line.trim.matches(pattern)
-  } println(file + ": " + line.trim)
+    trimmed = line.trim
+    if trimmed.matches(pattern)
+  } println(file + ": " + trimmed)
+
+  def grepResults(pattern: String, files: Array[File]): Array[String] = for {
+    file <- files
+    if file.getName.endsWith(".scala")
+    line <- fileLines(file)
+    trimmed = line.trim
+    if trimmed.matches(pattern)
+  } yield file + ": " + trimmed
 
 }
