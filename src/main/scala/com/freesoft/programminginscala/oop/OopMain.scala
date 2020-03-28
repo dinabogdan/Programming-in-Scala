@@ -8,14 +8,10 @@ object OopMain {
 
   def main(args: Array[String]): Unit = {
 
-    val e1: Element = new ArrayElement(Array("Hello", "World"))
-    val ae: ArrayElement = new LineElement("Hello")
-    val e2: Element = ae
-    val e3: Element = new UniformElement('x', 2, 3)
+    val column1 = Element.elem("hello") above Element.elem("***")
+    val column2 = Element.elem("***") above Element.elem("world")
 
-    invokeDemo(e1)
-    invokeDemo(ae)
-    invokeDemo(e3)
+    println(column1 beside column2)
 
   }
 
