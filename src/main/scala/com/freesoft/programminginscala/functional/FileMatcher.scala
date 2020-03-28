@@ -12,7 +12,7 @@ object FileMatcher {
 
   def filesRegex(query: String): Array[File] = filesMatching(_ matches query)
 
-  def filesMatching(matcher: String => Boolean): Array[File] =
+  private def filesMatching(matcher: String => Boolean): Array[File] =
     for {
       file <- filesHere
       if matcher(file.getName)
