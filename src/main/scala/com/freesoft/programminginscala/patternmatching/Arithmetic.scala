@@ -1,6 +1,6 @@
 package com.freesoft.programminginscala.patternmatching
 
-abstract class Expr
+sealed class Expr
 
 case class Var(name: String) extends Expr
 
@@ -23,6 +23,15 @@ object PatternMatchingMain {
   def simplifyAdd(expr: Expr): Expr = expr match {
     case BinOp("+", x, y) if x == y => BinOp("*", x, Number(2))
     case _ => expr
+  }
+
+  // unchecked is not necessary,
+  // but the warning emitted by the compiler in case that the match is not exhaustive
+  // can be avoided by using this annotation
+  def describe(expr: Expr): String = (expr: @unchecked) match {
+    case Number(_) => "a number"
+    case Var(_) => "a variable"
+    case _ => throw new RuntimeException("Unimplemented yet")
   }
 
   def simplifyAll(expr: Expr): Expr = expr match {

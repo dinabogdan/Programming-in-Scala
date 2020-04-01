@@ -1,0 +1,4 @@
+INFO  started: Metals version 0.8.0 in workspace 'C:\DevTools\workspace\programming-in-scala'
+INFO  time: initialize in 0.51s
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\AdvancedFeatures.scala
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
