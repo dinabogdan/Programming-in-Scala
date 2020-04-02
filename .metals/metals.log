@@ -40,3 +40,19 @@ ERROR 	at org.gradle.wrapper.WrapperExecutor.execute(WrapperExecutor.java:107)
 ERROR 	at org.gradle.wrapper.GradleWrapperMain.main(GradleWrapperMain.java:63)
 ERROR Picked up _JAVA_OPTIONS: -Xmx512M
 INFO  build tool exit: 2147483647
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+INFO  shutting down Metals
+INFO  started: Metals version 0.8.3 in workspace 'C:\DevTools\workspace\programming-in-scala'
+INFO  time: initialize in 0.47s
+INFO  skipping build import with status 'Cancelled'
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\AdvancedFeatures.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\AdvancedFeatures.scala
+Apr 02, 2020 11:00:03 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 7
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala

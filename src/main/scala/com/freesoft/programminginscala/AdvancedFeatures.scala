@@ -3,6 +3,7 @@ package com.freesoft.programminginscala
 import java.math.BigInteger
 
 object AdvancedFeatures {
+  
 
   def main(args: Array[String]): Unit = {
     val bigInt = new BigInteger("12345")
