@@ -56,3 +56,4 @@ WARNING: Unmatched cancel notification for request id 7
 WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
 WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
 WARN  no build target for: C:\DevTools\workspace\programming-in-scala\src\main\scala\com\freesoft\programminginscala\patternmatching\Arithmetic.scala
+INFO  shutting down Metals
