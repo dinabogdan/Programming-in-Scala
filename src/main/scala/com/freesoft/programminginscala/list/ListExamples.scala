@@ -63,6 +63,26 @@ object ListExamples {
 
     println(sortedList)
 
+
+    val words = List("the", "quick", "brown", "fox")
+
+    val wordsToListResult = words map (_.toList)
+
+    val wordsFlatMapToListResult = words flatMap (_.toList)
+
+    // a list of all pairs (i, j) such that 1<=j<i<5
+    val pairs1 = List range(1, 5) flatMap (
+      i => List range(1, i) map (j => (i, j))
+      )
+
+    // a list of all pairs (i, j) such that 1<=i<j<5
+
+    val pairs2 = List range(1, 5) flatMap (
+      j => List range(1, j) map (i => (i, j))
+      )
+
+    println(pairs2)
+
   }
 
 }
