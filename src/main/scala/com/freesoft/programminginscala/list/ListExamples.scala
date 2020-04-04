@@ -19,6 +19,8 @@ object ListExamples {
     }
   }
 
+  private def reverseLeft[T](xs: List[T]) = xs.foldLeft(List[T]()) { (ys, y) => y :: ys }
+
   private def mergeSort[T](comparison: (T, T) => Boolean)(xs: List[T]): List[T] = {
 
     def merge(xs: List[T], ys: List[T]): List[T] = {
@@ -82,6 +84,11 @@ object ListExamples {
       )
 
     println(pairs2)
+
+    val phrase = words.foldLeft("")(_ + " " + _)
+
+    println(phrase)
+
 
   }
 
