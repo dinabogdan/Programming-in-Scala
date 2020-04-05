@@ -46,6 +46,30 @@ trait LazyRationalTrait {
 
 }
 
+class Food
+
+abstract class Animal {
+  type SuitableFood <: Food
+
+  def eat(food: SuitableFood): Unit
+}
+
+class Grass extends Food
+
+class Cow extends Animal {
+  override type SuitableFood = Grass
+
+  override def eat(food: Grass): Unit = {}
+}
+
+class DogFood extends Food
+
+class Dog extends Animal {
+  override type SuitableFood = DogFood
+
+  override def eat(food: DogFood): Unit = {}
+}
+
 object AbstractMain {
 
   def main(args: Array[String]): Unit = {
@@ -66,6 +90,13 @@ object AbstractMain {
     }
 
     println(lr)
+
+    val bessy = new Cow
+    val lassie = new Dog
+    val bootsie = new Dog
+
+    lassie eat new bootsie.SuitableFood
+
 
   }
 }
