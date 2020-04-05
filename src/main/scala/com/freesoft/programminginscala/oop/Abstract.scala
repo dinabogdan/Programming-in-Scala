@@ -70,6 +70,10 @@ class Dog extends Animal {
   override def eat(food: DogFood): Unit = {}
 }
 
+class Pasture {
+  var animals: List[Animal {type SuitableFood = Grass}] = Nil
+}
+
 object AbstractMain {
 
   def main(args: Array[String]): Unit = {
