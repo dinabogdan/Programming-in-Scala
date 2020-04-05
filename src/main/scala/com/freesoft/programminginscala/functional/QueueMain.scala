@@ -4,7 +4,7 @@ object QueueMain {
 
   def main(args: Array[String]): Unit = {
 
-    
+
 
   }
 
