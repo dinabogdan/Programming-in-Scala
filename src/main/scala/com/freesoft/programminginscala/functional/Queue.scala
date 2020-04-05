@@ -1,21 +1,21 @@
 package com.freesoft.programminginscala.functional
 
-trait Queue[T] {
+trait Queue[+T] {
   def head: T
 
   def tail: Queue[T]
 
-  def enqueue(element: T): Queue[T]
+  def enqueue[U >: T](element: U): Queue[U]
 }
 
 object Queue {
 
   def apply[T](xs: T*): Queue[T] = new QueueImpl[T](xs.toList, Nil)
 
-  private class QueueImpl[T](
-                              private val leading: List[T],
-                              private val trailing: List[T]
-                            ) extends Queue[T] {
+  private class QueueImpl[+T](
+                               private val leading: List[T],
+                               private val trailing: List[T]
+                             ) extends Queue[T] {
 
     private def mirror() = if (leading.isEmpty)
       new QueueImpl(trailing.reverse, Nil)
@@ -28,7 +28,7 @@ object Queue {
       new QueueImpl(q.leading.tail, q.trailing)
     }
 
-    def enqueue(element: T) = new QueueImpl(leading, element :: trailing)
+    def enqueue[U >: T](element: U) = new QueueImpl(leading, element :: trailing)
   }
 
 }
