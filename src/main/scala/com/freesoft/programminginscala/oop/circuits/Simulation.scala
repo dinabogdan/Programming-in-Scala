@@ -27,7 +27,6 @@ abstract class Simulation {
         agenda = rest
         curtime = item.time
         item.action
-      case _ => throw RuntimeException
     }
   }
 
