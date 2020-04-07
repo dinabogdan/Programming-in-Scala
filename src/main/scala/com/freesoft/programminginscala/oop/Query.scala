@@ -64,6 +64,7 @@ object QueryMain {
 
     println(authorsWithMoreThan1Book)
     println(removeDuplicates(authorsWithMoreThan1Book))
+
   }
 
 }
